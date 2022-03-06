@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    
+}
+.Cabecera{
+    background-color:white;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.Logo{
+    display: Flex;
+}
+.Logo img{
+    display: inline-flex;
+    height:100px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;;
+}
+.Menu{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Menu nav ul{
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+.Menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    color: black;
+    font-size: 25px;
+}
+.Menu nav li{
+    display: inline-flex;
+}
+.Menu nav li:hover{
+    background-color: wheat;
+}
+/*Franja*/
+.franja{
+    background-color:gainsboro;
+    height: 3px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Aqui empieza el cuerpo de la pagina*/
+
+/*Aquí empiezan los productos*/
+
+.Articulos{
+    text-align: center;
+    margin-top: 40px;
+}
+
+  .pasteles{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.pasteles .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.pasteles .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pasteles .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+ .card h4{
+    font-weight: 600;
+}
+
+.pasteles .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pasteles .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+/*Tabla de pedidos*/
+
+.tablapastelero{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+    margin-top: 60px;
+}
+
+.tablacontainer{
+    text-align: center;
+}
+
+th{
+    padding: 5px;
+    background-color: #561832;
+    color: white;
+}
+
+td{
+    background-color: ghostwhite;
+    padding: 5px;
+}
+
+
+
+/*Pie de pagina*/
+.pie-pagina{
+    box-sizing: border-box;
+    margin-top: 30px;
+    width: 100%;
+    background-color: orange;
+}
+.pie-pagina .grupo-1{
+    background-color: orange;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+    background-color: orange;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    background-color: orange;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    background-color: orange;
+}
+.box{
+    background-color: orange;
+    
+}
+.red-social{
+    background-color: orange;
+}
+.grupo-2 b{
+    background-color: orange;
+}
+.pie-pagina a{
+    background-color: orange;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

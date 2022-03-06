@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    
+}
+.Cabecera{
+    background-color:white;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.Logo{
+    display: Flex;
+}
+.Logo img{
+    display: inline-flex;
+    height:100px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;;
+}
+.Menu{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Menu nav ul{
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+.Menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    color: black;
+    font-size: 25px;
+}
+.Menu nav li{
+    display: inline-flex;
+}
+.Menu nav li:hover{
+    background-color: wheat;
+}
+/*Franja*/
+.franja{
+    background-color:gainsboro;
+    height: 3px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Aqui empieza el cuerpo de la pagina*/
+.Carrusel{
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+/*Aquí empiezan los productos*/
+.Articulos{
+    text-align: center;
+}
+
+  .pasteles{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.pasteles .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.pasteles .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pasteles .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+ .card h4{
+    font-weight: 600;
+}
+
+.pasteles .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pasteles .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+/*Formulario para pedidos*/
+
+.form-register {
+    box-sizing: border-box;
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+  
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    background-color:#24303c;
+}
+  .form-register h3 {
+    font-size: 18px;
+    background-color:#24303c;
+}
+  
+.controls {
+    box-sizing: border-box;
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+.check{
+     display: inline-flex; 
+     margin-left: 50px;
+}
+  
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    background-color:#24303c;
+}
+  
+.form-register a {
+    color: white;
+    text-decoration: none;
+    background-color:#24303c;
+}
+  
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+  
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+ 
+/*Pie de pagina*/
+.pie-pagina{
+    box-sizing: border-box;
+    margin-top: 30px;
+    width: 100%;
+    background-color: orange;
+}
+.pie-pagina .grupo-1{
+    background-color: orange;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    background-color: orange;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+    background-color: orange;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    background-color: orange;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    background-color: orange;
+}
+.box{
+    background-color: orange;
+    
+}
+.red-social{
+    background-color: orange;
+}
+.grupo-2 b{
+    background-color: orange;
+}
+.pie-pagina a{
+    background-color: orange;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
